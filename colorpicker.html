@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Color Picker</title>
+</head>
+<body>
+    <script src="js/colorpicker.js"></script>
+    <form>
+        red:
+        <input type="text" id="redtext" name="red" size="10">
+        <br><br>
+        green:
+        <input type="text" id="greentext" name="green" size="10">
+        <br><br>
+        blue:
+        <input type="text" id="bluetext" name="blue" size="10">
+        <br><br>
+    </form>
+    <button onclick="convertValues()">convert</button>
+
+    <p id="output"></p>
+    <br>
+    <canvas id="showcolor" width="300" height="150" style="border:1px solid black;"></canvas>
+
+    
+</body>
+</html>
