@@ -5,7 +5,6 @@ function convertValues() {
   var green = document.getElementById("greentext").value;
   var blue = document.getElementById("bluetext").value;
   
-  
 
 // convert to int
   var redValue = parseInt(red);
@@ -15,7 +14,8 @@ function convertValues() {
   var percentRed = 0.0;
   var percentGreen = 0.0;
   var percentBlue = 0.0;
-  var luminanceRange = 0.0;
+  var luminanceRange = 1.0;
+  
 
   // get percentages
   percentRed = (1/(redValue+greenValue+blueValue))*redValue;
@@ -29,16 +29,14 @@ function convertValues() {
 
   document.getElementById("output").innerHTML = outputMessage;
   
-  // make square to show color
+  // make box to show color
   var c = document.getElementById("showcolor");
   var ctx = c.getContext("2d");
   ctx.beginPath();
-  ctx.rect(40, 40, 150, 100);
+  ctx.rect(35, 35, 75, 75);
   ctx.fillStyle = "rgb(" + redValue + "," + greenValue + "," + blueValue + ")";
   ctx.fill();
 
-
-
-
-
 }
+
+
