@@ -3,9 +3,28 @@
 
   </head>
   <body>
+    <script src="js/colorpicker.js"></script>
+    
     <h2>Color Picker Assignment</h2>
     <p><a href="https://github.com/cheesekat/colorpicker.git">Link to GitHub</a></p>
     <p><a href="https://www.pivotaltracker.com/n/projects/2597699">Link to Pivotal Tracker</a></p>
+    <br><br>
+    <form>
+        red:
+        <input type="text" id="redtext" name="red" size="10">
+        <br><br>
+        green:
+        <input type="text" id="greentext" name="green" size="10">
+        <br><br>
+        blue:
+        <input type="text" id="bluetext" name="blue" size="10">
+        <br><br>
+    </form>
+    <button onclick="convertValues()">convert</button>
+
+    <p id="output"></p>
+    <br>
+    <canvas id="showcolor" width="150" height="150" style="border:1px solid black;"></canvas>
     
 
 
